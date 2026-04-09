@@ -35,10 +35,23 @@ function List() {
     </>
   );
 }
+function Search() {
+  return (
+    <div>
+      <label htmlFor="search">Search: </label>
+      <input id="search" type="text" />
+    </div>
+  );
+}
+function Header() {
+  return <h1>Hacker News</h1>;
+}
 function App() {
   return (
     <div>
       <h1>Hacker News</h1>
+      <Header />
+      <Search />
       <List />
     </div>
   );
